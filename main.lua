@@ -3,7 +3,7 @@ local font_size = 18
 print([[Welcome to DreamCode!
 Example project made by TheDreamingCat]])
 
-local dreamCode = require("libraries.DreamCode.main")
+local dreamCode = require("libraries.dreamcode.main")
 
 love.window.close()
 
@@ -46,7 +46,7 @@ local function split(input)
 end
 
 function love.update()
-    io.write("ScrCode> ")
+    io.write("DreamCode> ")
 
     local run_to = split(io.read())
 

@@ -9,8 +9,8 @@ require("love.window")
 
 -- ^ idk why i added this..
 
-require("libraries.scratchcode.main").comp_and_run(returned_table)
+require("libraries.dreamcode.main").comp_and_run(returned_table)
 
 --love.window.showMessageBox("Info","Thread "..tostring(thread_id).." has ceased its operation.","info",true)\
 
--- ^ debugging stuff.
+-- ^ debugging stuff.x

@@ -1,17 +1,17 @@
---ScratchCode programming language version 2.0.
+--DreamCode programming language version 2.0.
 
 --Made by TheDreamingCat on 15th of February,2026
---ScratchCode Codename:Bublik release version
+--DreamCode default release version
 
 --Very silly code,please be aware.
 
 --Silly is now required.
 
-local ScratchCode = {}
+local DreamCode = {}
 
 local functions = {}
 
-_G.func_table = require("libraries.scratchcode.function_table")
+_G.func_table = require("libraries.dreamcode.function_table")
 
 local function_vars = {}
 local function_vars_name = {}
@@ -533,7 +533,7 @@ function get_func(funcName,mainList,arguments) -- Hardest part...
     function_vars_name = {}
 end
 
-function ScratchCode.comp_and_run(mainList) -- The most simple function.
+function DreamCode.comp_and_run(mainList) -- The most simple function.
     local comp_table,func_table = compSynt(mainList,true)
 
     functions = func_table
@@ -541,7 +541,7 @@ function ScratchCode.comp_and_run(mainList) -- The most simple function.
     run_comp(comp_table)
 end
 
-function ScratchCode.newthread(mainList,thread_num) -- Also simple.
+function DreamCode.newthread(mainList,thread_num) -- Also simple.
     --print('Creating thread:'..thread_num)
 
     local thread_new = love.thread.newThread("libraries/scratchcode/runner.lua")
@@ -551,10 +551,10 @@ function ScratchCode.newthread(mainList,thread_num) -- Also simple.
     return thread_new
 end
 
-return ScratchCode
+return DreamCode
 
 -- "I hate school!" - TheDreamingCat
 -- "Roblox got blocked in Russia ;(" - TheDreamingCat
 -- "Somehow, this code works." - TheDreamingCat
 -- "Very trash code." - Some nerd.
--- "ScratchCode 2.0 is still wip!" - TheDreamingCat
+-- "DreamCode 2.0 is still wip!" - TheDreamingCat
