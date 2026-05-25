@@ -1,9 +1,9 @@
 local font_size = 18
 
-print([[Welcome to ScratchCode!
+print([[Welcome to DreamCode!
 Example project made by TheDreamingCat]])
 
-local scr_code = require("libraries.scratchcode.main")
+local dreamCode = require("libraries.DreamCode.main")
 
 love.window.close()
 
@@ -50,5 +50,5 @@ function love.update()
 
     local run_to = split(io.read())
 
-    scr_code.comp_and_run(run_to)
+    dreamCode.comp_and_run(run_to)
 end
