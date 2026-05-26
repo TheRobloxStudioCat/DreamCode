@@ -1,4 +1,4 @@
--- Function table for ScratchCode version 1.5
+-- Function table for DreamCode 2.0
 
 local builtin = require("libraries.dreamcode.sys_funcs.builtin")
 local main = require("libraries.dreamcode.sys_funcs.main")
